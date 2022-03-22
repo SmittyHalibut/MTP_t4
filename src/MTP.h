@@ -26,7 +26,7 @@
 #ifndef MTP_H
 #define MTP_H
 
-#if !defined(USB_MTPDISK) && !defined(USB_MTPDISK_SERIAL)
+#if !defined(USB_MTPDISK) && !defined(USB_MTPDISK_SERIAL) && !defined(USB_SOAR)
   #error "You need to select USB Type: 'MTP Disk (Experimental)'"
 #endif
 
