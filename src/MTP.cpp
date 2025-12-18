@@ -1020,7 +1020,8 @@ const uint16_t supported_events[] =
 
 #elif defined(__IMXRT1062__)  
 
-    void MTPD::write_init(uint16_t op, uint32_t transaction_id, uint32_t length)
+  #if 0
+    void MTPD::write_init(uint16_t op, uint32_t transaction_id, uint32_t length_)
     {
       MTPHeader header;                                   
       header.len = length_ + sizeof(header);        
@@ -1082,7 +1083,7 @@ const uint16_t supported_events[] =
         writeo(disk_buffer,nread);
       write_finish();
     }
-
+    #endif
 
     void MTPD::write(const char *data, int len) 
     { if (write_get_length_) 
