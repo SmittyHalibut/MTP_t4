@@ -23,7 +23,7 @@
 
 // modified for SD by WMXZ
 
-#if /*1 ||*/ defined(USB_MTPDISK) || defined(USB_MTPDISK_SERIAL)
+#if /*1 ||*/ defined(USB_MTPDISK) || defined(USB_MTPDISK_SERIAL) || defined (USB_SOAR)
 
 #include "MTP.h"
 
